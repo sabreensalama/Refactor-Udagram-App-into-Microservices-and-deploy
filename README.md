@@ -14,18 +14,29 @@
 4. udacity-c3-restapi-user:  a backend microservice to login/logout
 
 ## run the microservices
-1. locally
+### locally using docker 
 
 ```
 docker-compose up
 ```
-2. in kubernetes cluster
+### or from kubernetes cluster
 ```
 kubectl port-forward service/frontend 8100:8100
 ```
 ```
  kubectl port-forward service/reverseproxy 8080:8080
  ```
-
+###  connect app with travis ci and it will build and run all od them
 
 ## Output
+### travis ci
+![pass travis ci ](https://github.com/sabreensalama/Refactor-Udagram-App-into-Microservices-and-deploy/blob/master/output/travis-passed.png)
+### all running pods
+![all pods ](https://github.com/sabreensalama/Refactor-Udagram-App-into-Microservices-and-deploy/blob/master/output/running-pods.png)
+### docker hub images 
+![docker images](https://github.com/sabreensalama/Refactor-Udagram-App-into-Microservices-and-deploy/blob/master/output/docker-hub.png)
+### frontend 
+![frontend ](https://github.com/sabreensalama/Refactor-Udagram-App-into-Microservices-and-deploy/blob/master/output/front-end.png)
+
+
+
